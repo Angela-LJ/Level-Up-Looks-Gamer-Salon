@@ -1,0 +1,828 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+  background:
+  background-repeat: no-repeat;
+
+} */
+
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+header.transparentHeader {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  /* background: linear-gradient(white, #f2d7e0); */
+  background: black;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  float: left;
+  border-bottom: 2px rgb(130, 81, 115, 0.2) solid;
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+ nav ul {
+  float: left;
+
+ }
+
+ nav ul li{
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  float: left;
+  font-size: 1.5vh;
+  border-left: 2px rgb(130, 81, 115, 0.2) solid;
+ }
+
+ nav ul li:hover {
+  background: black;
+  color: white;
+  border-bottom: white 3px solid;
+ }
+
+ nav ul li:hover a {
+  color: white;
+ }
+
+ .contact {
+  border-right: 2px rgb(130, 81, 115, 0.2) solid;
+ }
+
+ header a {
+  text-decoration: none;
+  color:  white;
+ }
+
+
+ header .bag {
+  height: 50px;
+  padding: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+  clear: both;
+  margin-bottom: 8px;
+  border: 2px rgb(130, 81, 115, 0.2) solid;
+  border-left:none;
+ }
+
+ .bag:hover {
+  border-bottom: 3px white solid;
+ }
+
+ header .search {
+  height: 50px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 300px;
+  margin-top: -3px;
+  margin-left: -4px;
+  clear: both;
+  margin-bottom: 7px;
+  border: 2px rgb(130, 81, 115, 0.2) solid;
+  border-left:none;
+ }
+
+ .search:hover {
+  border-bottom: 3px white solid;
+ }
+
+ header .bookOnline {
+  position: absolute;
+  padding-top: 15px;
+  padding-right: 70px;
+  padding-bottom: 16px;
+  padding-left: 57px;
+  font-size: 1.5vh;
+  color: white;
+  background-color: black;
+ }
+
+ .bookOnline:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  border-bottom: 3px white solid;
+ }
+
+
+
+ /******************************************
+/* SECTION 1 LAYOUT
+/*******************************************/
+
+.sectionOne {
+  background: url(../css/assets/LevelUp\ Looks\ background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  height: 1100px;
+  width: 100%;
+  display: block;
+  border: lightgray 2px solid;
+
+}
+
+.logoContainer {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 70px;
+  background-color: transparent;
+}
+
+.logoContainer img {
+  position:absolute;
+  height: 160px;
+  margin-left: 10%;
+}
+
+.logoContainer:hover {
+  transform: translateY(4px);
+}
+
+.headingContainer {
+  position: relative;
+  height: 300px;
+  width: 600px;
+}
+
+.sectionOne h1 {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
+  font-size: 5vh;
+  font-family: 'VT323', monospace;
+  background-color: black;
+  color: white;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.sectionOne h1:hover {
+  transform: translateY(4px);
+}
+
+.sectionOne span {
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 20%;
+  font-size: 2.5vh;
+  line-height: 2.5vh;
+  font-family: 'VT323', monospace;
+}
+
+.pressPlay {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 35%;
+  padding: 10px 40px;
+  background-color: black;
+  border: white 5px double;
+  color: white;
+  float: right;
+  font-family: 'VT323', monospace;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: block;
+}
+
+.pressPlay::before {
+  display: inline-block;
+  margin-right: 5px; /* Adjust spacing between arrow and text */
+  padding-right: 5px;
+}
+
+.pressPlay:hover:before {
+  content: '\2192'; /* Unicode character for right arrow */
+  display: inline-block;
+  margin-left: -27px; /* Adjust spacing between arrow and text */
+  padding-left: -5px;
+}
+
+.pressPlay:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+
+.pressPlay:active {
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  transition: white 2s, #e18a8a 2s;
+  transform: translateY(4px);
+  color: #e18a8a;
+}
+
+.sectionOne .coupon {
+  position: absolute;
+  height: 340px;
+  width: 360px;
+  margin-top: 20px;
+  margin-left: 1300px;
+  border: black 5px dotted;
+  background-image: url(../css/assets/professional-hair-supplies-flat-lay.jpg);
+  background-size: cover;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.coupon .firstVisit {
+  margin-top: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 800;
+  font-size: 2.5vh;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.coupon .discount {
+  margin-top: 45%;
+  margin-left: 2%;
+  font-size: 3vh;
+  font-weight: 800;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.coupon .bookOnline2 {
+  margin-top: 70%;
+  margin-left: 18%;
+  position: absolute;
+  padding: 10px 40px 10px 40px;
+  background-color: black;
+  border: white 5px double;
+  color: white;
+  float: right;
+  font-family: 'VT323', monospace;
+  font-size: 2.5vh;
+}
+
+.bookOnline2:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.bookOnline2:active {
+  transform: translateY(4px);
+  color: #e18a8a;
+}
+
+.bookOnline2::before {
+  display: inline-block;
+  margin-right: 5px; /* Adjust spacing between arrow and text */
+  padding-right: 5px;
+}
+
+.bookOnline2:hover:before {
+  content: '\2192'; /* Unicode character for right arrow */
+  display: inline-block;
+  margin-left: -27px; /* Adjust spacing between arrow and text */
+  padding-left: -5px;
+}
+
+/******************************************
+/* SECTION TWO
+/*******************************************/
+.sectionTwo {
+  clear: both;
+  height: 600px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 50px;
+  position: relative;
+  display: block;
+  box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.2);
+
+}
+
+.sectionTwo .twoLeft {
+  height: 500px;
+  width: 50%;
+  /* border: 1px blue solid; */
+  float: left;
+  position: relative;
+}
+
+.sectionTwo .twoRight {
+  /* border: black 1px solid; */
+  height: 500px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.sectionTwo h2 {
+  font-size: 5vh;
+  line-height: 4vh;
+  position: absolute;
+  font-family: 'VT323', monospace;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.sectionTwo p {
+  float: left;
+  position:absolute;
+  margin-top: 120px;
+  line-height: 2.7vh;
+  font-size: 1.5vh;
+  padding-right: 30px;
+  font-family: 'Mate', serif;
+
+}
+
+.sectionTwo button {
+  margin-top: 420px;
+  width: 250px;
+  padding: 10px 20px 10px 20px;
+  background-color: black;
+  border: white 5px double;
+  color: white;
+  float: right;
+  font-family: 'VT323', monospace;
+  font-size: 2.5vh;
+  margin-right: 400px;
+  position: absolute;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.sectionTwo button:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.sectionTwo button:active {
+  transform: translateY(4px);
+  color: #e18a8a;
+}
+
+.readMore::before {
+  display: inline-block;
+  margin-right: 5px; /* Adjust spacing between arrow and text */
+  padding-right: 5px;
+}
+
+.readMore:hover:before {
+  content: '\2192'; /* Unicode character for right arrow */
+  display: inline-block;
+  margin-left: -27px; /* Adjust spacing between arrow and text */
+  padding-left: -5px;
+}
+
+.twoRight .salonPic {
+  height: 480px;
+  position: relative;
+  margin-left: 80px;
+  border-right: 5px solid black;
+  border-left: none;
+  border-top: none;
+  border-bottom: 5px black solid;
+  border-radius: 5px;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.twoRight .playVid {
+  position: absolute;
+  margin-bottom: 150px;
+  height: 80px;
+  top: 200px;
+  left: 400px;
+}
+
+/******************************************
+/* SECTION THREE
+/*******************************************/
+
+.sectionThree {
+  clear: both;
+}
+
+.sectionThree {
+  background-color: rgb(248, 238, 238);
+  height: 400px;
+  padding-top: 60px;
+  padding-right: 60px;
+  padding-left: 20px;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, .1);
+}
+
+div.left {
+  width: 100%;
+  float: left;
+  background: rgb(248, 238, 238);
+  position: relative;
+}
+
+/* div.right {
+  width: 38%;
+  height: 255px;
+  float: left;
+  background-image: url(../css/assets/chalo-garcia-4gK1Vy2sdJ0-unsplash.jpg);
+  position: relative;
+  background-size: contain;
+  background-repeat:no-repeat;
+  border-radius: 10px;
+  border: 5px pink solid;
+  box-shadow: 20px 20px 10px 0px rgba(96, 96, 96, 0.3);
+  margin-top: -300px;
+  margin-left: 600px
+} */
+
+
+
+.iconContainer {
+  float: left;
+  width: 400px;
+  margin-left: 3.5%;
+  margin-right: -50px;
+  margin-bottom: 50px;
+  border: black 3px solid;
+  border-radius: 10px;
+  position: relative;
+  height: 260px;
+  background-color: white;
+  box-shadow: 20px 20px 10px 0px rgba(96, 96, 96, 0.3);
+}
+
+.iconContainer:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: rgb(185, 139, 146) 4px solid;
+}
+
+.iconHeading {
+  /* border: rgb(255, 235, 239) 10px solid; */
+  transform: none;
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  border: white 5px double;
+  color: black;
+  float: right;
+  font-family: 'VT323', monospace;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  /* box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7); */
+}
+
+.iconHeading a {
+  text-decoration: none;
+  position: absolute;
+}
+
+.iconHeading span {
+  font-size: 35px;
+  margin-top: 30px;
+  position: absolute;
+  font-weight: bold;
+  display: none;
+  text-decoration: none;
+}
+
+.iconHeading:hover, .iconHeading:hover a, .iconHeading:hover span{
+  transform: translateY(3px);
+  display: block;
+
+}
+
+.iconHeading img {
+  margin-left: 90px;
+  margin-top: 22px;
+  position: absolute;
+}
+
+
+.iconHeading h5 {
+  font-size: 2.5vh;
+  font-family: 'VT323', monospace;
+  margin-left: 160px;
+  margin-top: 30px;
+  position: absolute;
+  float: left;
+}
+
+.iconContainer h5 a {
+  text-decoration: none;
+  color: black
+}
+
+.expertBeautician, .gameList {
+  height: 60px;
+}
+
+.qualityServicesH5{
+  margin-right: -60px;
+}
+
+.iconContainer p {
+  line-height: 2vh;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  font-family: 'Mate', serif;
+  /* background: black;
+  color: white; */
+}
+
+
+/******************************************
+/* Section 4
+/*******************************************/
+
+.sectionFour {
+  clear: both;
+  padding-left: 120px;
+  padding-right: 120px;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.sectionFour h4 {
+  /* font-family: 'Mate', serif; */
+  font-family: 'VT323', monospace;
+  font-size: 7vh;
+  text-align: center;
+  margin-right: 40px;
+  margin-top: 70px;
+  background-color: black;
+  color: white;
+  border: double 5px white;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+  /* text-decoration: underline; */
+}
+
+.row {
+  /* border: green 2px solid; */
+  height: 800px;
+  margin-left: 110px;
+  margin-top: 50px;
+  width: 100%;
+
+}
+
+.imageBox {
+  width: 20%;
+  height: 500px;
+  float: left;
+  margin-right: 150px;
+  z-index: 1;
+}
+.sectionFour img {
+  height: 600px;
+  float: left;
+  display: block;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, .2);
+  border-right: 5px solid black;
+  border-left: none;
+  border-top: none;
+  border-bottom: 5px black solid;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+
+.profileBox {
+  float: left;
+  z-index: 3;
+}
+
+.profileName {
+  border: white 5px double;
+  margin-left: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 1.7vh;
+  float: left;
+  width: 80%;
+  clear: both;
+  background: black;
+  color: white;
+  font-family: 'Mate', serif;
+  z-index: 2;
+}
+
+.title {
+  border: 1px solid black;
+  background: rgb(250, 230, 233);
+  margin-left: 150px;
+  padding: 10px;
+  font-family: 'Mate', serif;
+  font-size: 1.5vh;
+  border-radius: 5px;
+  border: black 5px double;
+}
+
+.colorist {
+  margin-left: 130px;
+  border-radius: 5px;
+}
+
+.beautician {
+  margin-left: 125px;
+}
+.stylist {
+  margin-left: 140px;
+}
+.sectionFour img:hover{
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: pink 5px solid;
+  filter: brightness(115%);
+  z-index: 1;
+}
+
+
+/******************************************
+/* Section 5
+/*******************************************/
+
+/* .sectionFive {
+
+  height: 400px;
+  padding-top: 20px;
+}
+
+.sectionFive div {
+  width: 40%;
+  height:350px;
+  margin-left: 880px;
+  margin-top:50px;
+  background-image: url(../css/assets/woman-gf6694106f_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 5px black double;
+}
+
+.sectionFive span {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 2vh;
+  font-weight: bold;
+  position: absolute;
+}
+
+.sectionFive .colorDiscount {
+  margin-top: 150px;
+  margin-left: 50px;
+} */
+
+
+/******************************************
+/* Section 6
+/*******************************************/
+
+.sectionSix {
+  background-color: rgb(248, 238, 238);
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+}
+.sectionSix h3 {
+  font-family: 'VT323', monospace;
+  font-size: 8vh;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  border: double 5px white;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.galleryContainer {
+  /* border: green 2px solid; */
+  height: 900px;
+  width: 1100px;
+  margin-left: 220px;
+}
+
+.galleryContainer img{
+  background-color: black;
+  border: white 5px double;
+  color: white;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+
+}
+
+.galleryContainer img:hover {
+  border: lightpink double 5px;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  filter: brightness(110%);
+}
+
+.col1, .col2, .col3 {
+  float: left;
+  margin-right: 25px;
+  width: 26.5%;
+}
+
+.col3 > img {
+  height: 350px;
+}
+
+.col2 img {
+  /* border: blue 1px solid; */
+  height: 800px;
+}
+
+
+.col1 img + img {
+  height: 490px;
+}
+
+.col2 img + img {
+  height: 220px;
+}
+
+.col3 img + img {
+  height: 426px;
+}
+
+.col1 img, .col2 img, .col3 img {
+  width: 100%;
+}
+
+.col2 {
+  /* border: red 1px solid; */
+  height: 800px;
+  width: 33.333%;
+}
+
+.col3 {
+  /* border: purple 1px solid; */
+  height: 800px;
+  width: 33.333%;
+}
+
+.galleryContainer img {
+  margin: 10px;
+}
+
+.leftArrow {
+  float:left;
+  margin-top: -500px;
+}
+
+.rightArrow {
+  float: right;
+  margin-top: -500px;
+}
+
+.galleryDots {
+  margin-left: 685px;
+  height: 60px;
+  margin-top: -50px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.sectionSeven {
+  background-color: black;
+  padding-top: 50px;
+}
+
+.sectionSeven .schedule {
+  background-image: url(../css/assets/LUL\ schedule.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  margin-left: 250px;
+  background-color: black;
+}
