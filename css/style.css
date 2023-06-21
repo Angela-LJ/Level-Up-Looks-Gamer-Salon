@@ -32,24 +32,30 @@
 /******************************************
 /* HEADER
 /*******************************************/
-header.transparentHeader {
+header {
   height: 50px;
+  display: flex;
   width: 100%;
   position: absolute;
-  /* background: linear-gradient(white, #f2d7e0); */
   background: black;
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
-  float: left;
+  display: flex;
+  /* float: left; */
   border-bottom: 2px rgb(130, 81, 115, 0.2) solid;
-  padding-left: 100px;
-  padding-right: 0;
+  background-color: black;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+
 }
 
  nav ul {
-  float: left;
+  align-self: center;
 
  }
 
@@ -114,7 +120,7 @@ nav {
  .search:hover {
   border-bottom: 3px white solid;
  }
-
+/*
  header .bookOnline {
   position: absolute;
   padding-top: 15px;
@@ -124,12 +130,12 @@ nav {
   font-size: 1.5vh;
   color: white;
   background-color: black;
- }
+ } */
 
- .bookOnline:hover {
+ /* .bookOnline:hover {
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
   border-bottom: 3px white solid;
- }
+ } */
 
 
 
