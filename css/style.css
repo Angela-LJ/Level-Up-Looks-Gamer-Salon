@@ -35,7 +35,7 @@
 }
 
 .main-header{
-  position: relative;
+  position: absolute;
   background: black;
   display: flex;
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
@@ -192,11 +192,13 @@ no longer have in my nav */
 
 .sectionOne {
   background: url(../css/assets/LevelUp\ Looks\ background.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center 50px;
+  background-position: center 210px;
   width: 100%;
-  padding-bottom: 25em;
+  margin: 0 auto;
+  padding-bottom: 45em;
+  clear: both;
   border: lightgray 2px solid;
 }
 
