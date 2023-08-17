@@ -1,21 +1,9 @@
-/* Box Model Hack */
-* {
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
 
 /******************************************
 /* BASE STYLES
@@ -148,43 +136,39 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 50px;
-  height: 1100px;
+  padding-bottom: 600px;
   width: 100%;
   display: block;
   border: lightgray 2px solid;
-
 }
 
 .logoContainer {
-  position: relative;
-  height: 200px;
-  width: 400px;
-  margin-top: 80px;
-  margin-left: 70px;
-  background-color: transparent;
+  width: 70%;
 }
 
 .logoContainer img {
-  position:absolute;
-  height: 160px;
-  margin-left: 10%;
+  width: 50%;
+  margin-top: 5.5em;
+  margin-left: 3em;
+  min-width: 280px;
+  max-width: 450px;
 }
 
 .logoContainer:hover {
-  transform: translateY(4px);
+  transform: translateY(5px);
 }
 
 .headingContainer {
-  position: relative;
-  height: 300px;
-  width: 600px;
+  width: 70%;
+  margin-bottom: 20%;
 }
 
 .sectionOne h1 {
   position: absolute;
-  margin-top: 10%;
-  margin-left: 20%;
-  font-size: 5vh;
+  max-width: 600px;
+  margin-top: 1em;
+  margin-left: 3.5em;
+  font-size: 2.5em;
   font-family: 'VT323', monospace;
   background-color: black;
   color: white;
@@ -250,8 +234,8 @@ nav {
   position: absolute;
   height: 340px;
   width: 360px;
-  margin-top: 20px;
-  margin-left: 1300px;
+
+  margin-left: 900px;
   border: black 5px dotted;
   background-image: url(../css/assets/professional-hair-supplies-flat-lay.jpg);
   background-size: cover;
@@ -832,3 +816,13 @@ div.left {
   margin-left: 250px;
   background-color: black;
 }
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+/* @media screen and (max-width: 1000px){
+  section.headingContainer h1, section.headingContainer span {
+    display: none;
+  }
+} */
