@@ -20,64 +20,112 @@
 /******************************************
 /* HEADER
 /*******************************************/
-header {
-  height: 50px;
-  display: flex;
-  width: 100%;
-  position: absolute;
-  background: black;
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
-  align-items: center;
-  justify-content: center;
+
+.mh-logo img {
+	max-width: 25%;
+  min-width: 300px;
 }
 
-nav {
+.container {
+	width: 100%;
+}
+
+.main-header{
+  position: relative;
+  background: black;
   display: flex;
-  /* float: left; */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.main-nav li {
+	display:inline-block;
+  font-size: 1.4em;
+  border-left: 3px rgba(144, 90, 128, 0.2) solid;
+}
+
+.main-nav li:hover:not(:first-child) {
+  background: rgb(42, 42, 42);
+  border: white 5px double;
+  border-radius: 5px;
+  margin: -10px;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.7);
+}
+
+.main-nav li:last-child {
+  border-right: 3px rgba(144, 90, 128, 0.2) solid;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+  text-decoration: none;
+  color: white;
+  font-family:Mate
+}
+
+
+/* nav {
   border-bottom: 2px rgb(130, 81, 115, 0.2) solid;
   background-color: black;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
+} */
 
-}
 
- nav ul {
-  align-self: center;
-
- }
-
- nav ul li{
-  padding-bottom: 10px;
+ /* nav ul li{ */
+  /* padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 20px;
-  float: left;
-  font-size: 1.5vh;
+  padding-top: 20px; */
+  /* font-size: 1.5vh;
   border-left: 2px rgb(130, 81, 115, 0.2) solid;
- }
+  margin: 0 auto; */
+  /* justify-items: center; */
+ /* } */
 
- nav ul li:hover {
-  background: black;
-  color: white;
+
+ /* nav ul li:hover:not(:first-child) {
+  background: white;
+  color: black;
   border-bottom: white 3px solid;
- }
+ } */
 
- nav ul li:hover a {
-  color: white;
- }
+ /* nav ul li:hover a {
+  color: black;
+ } */
 
- .contact {
+ /* nav ul li img {
+  width: 100%;
+  max-width: 500px;
+ } */
+
+ /* nav ul li img:hover{
+  transform: translateY(5px);
+  cursor: pointer;
+ } */
+
+ /* .contact {
   border-right: 2px rgb(130, 81, 115, 0.2) solid;
  }
 
  header a {
   text-decoration: none;
   color:  white;
- }
+ } */
 
-
- header .bag {
+/*might have to delete bag and search
+here and in the HTML if I choose to
+no longer have in my nav */
+ /* header .bag {
   height: 50px;
   padding: 9px;
   padding-left: 40px;
@@ -103,11 +151,11 @@ nav {
   margin-bottom: 7px;
   border: 2px rgb(130, 81, 115, 0.2) solid;
   border-left:none;
- }
+ } */
 
- .search:hover {
+ /* .search:hover {
   border-bottom: 3px white solid;
- }
+ } */
 /*
  header .bookOnline {
   position: absolute;
@@ -136,27 +184,29 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 50px;
-  padding-bottom: 600px;
   width: 100%;
-  display: block;
+  padding-bottom: 25em;
   border: lightgray 2px solid;
 }
 
-.logoContainer {
-  width: 70%;
+/*commenting out because new logo
+may replace old one, delete after if so */
+
+/* .logoContainer {
+  width: 50%;
+  max-width: 600px;
 }
 
 .logoContainer img {
-  width: 50%;
+  width: 100%;
   margin-top: 5.5em;
   margin-left: 3em;
-  min-width: 280px;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .logoContainer:hover {
   transform: translateY(5px);
-}
+} */
 
 .headingContainer {
   width: 70%;
