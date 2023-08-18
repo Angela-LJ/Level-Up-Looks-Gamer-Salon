@@ -66,6 +66,7 @@
 
 .main-nav .main-nav-list li a:hover {
   color: pink;
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
 }
 
 .main-nav li a:not(.mh-logo) {
