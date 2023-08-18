@@ -22,7 +22,7 @@
 /*******************************************/
 
 .mh-logo img {
-	max-width: 25%;
+	max-width: 20%;
   min-width: 300px;
 }
 
@@ -55,7 +55,7 @@
 }
 .main-nav li {
 	display:inline-block;
-  font-size: 1.4em;
+  font-size: 1em;
   border: transparent 5px double;
 }
 
@@ -64,7 +64,7 @@
   color: red;
 }
 
-.main-nav .main-nav-list li a:hover {
+.main-nav .main-nav-list li a:hover:not(.mh-logo) {
   color: pink;
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
 }
